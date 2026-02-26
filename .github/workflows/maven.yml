@@ -28,7 +28,7 @@ jobs:
         echo "STAGE_NAME : $STAGE_NAME"
         
   build:
-    name: compile project
+    name: Build
     runs-on: ubuntu-latest
     needs: pre_build
     steps:
