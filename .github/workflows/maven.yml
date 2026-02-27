@@ -9,7 +9,7 @@ env:
 jobs:
   pre_build:
     name: Pre Build 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     env:
         STAGE_NAME: before_package
     steps:
@@ -29,7 +29,7 @@ jobs:
         
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: pre_build
     steps:
     - uses: actions/checkout@v4
